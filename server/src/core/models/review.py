@@ -1,4 +1,4 @@
-from sqlalchemy import Column, INTEGER, SMALLINT, VARCHAR, DATE
+from sqlalchemy import Column, INTEGER, SMALLINT, VARCHAR, DATETIME
 
 from src.core.models import Base
 
@@ -10,4 +10,4 @@ class Review_tbl(Base):
     content_id = Column(INTEGER, primary_key=True)
     rate = Column(SMALLINT, nullable=False)
     comment = Column(VARCHAR(100), nullable=False)
-    created_at = Column(DATE, nullable=False)
+    created_at = Column(TIMESTAMP, nullable=False, server_default="CURRENT_TIMESTAMP")
