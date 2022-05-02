@@ -1,4 +1,4 @@
-from sqlalchemy import Column, INTEGER, SMALLINT, VARCHAR, DATETIME
+from sqlalchemy import Column, INTEGER, SMALLINT, VARCHAR, TIMESTAMP
 
 from src.core.models import Base
 
